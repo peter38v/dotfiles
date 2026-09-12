@@ -1,0 +1,14 @@
+{
+  "plugins": {
+    "coq.artifacts": {
+      "rev": "ef5f21d638ccc456cfa5b8d0ab37093cefe48c8b",
+      "src": "https://github.com/ms-jpq/coq.artifacts",
+      "version": "'artifacts'"
+    },
+    "coq_nvim": {
+      "rev": "d939a34ceb2b57d2937890337a4aa75eb55e18a8",
+      "src": "https://github.com/ms-jpq/coq_nvim",
+      "version": "'coq'"
+    }
+  }
+}

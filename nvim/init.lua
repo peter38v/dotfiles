@@ -1,0 +1,5 @@
+require("pete.core.options")
+require("pete.core.keymaps")
+require("pete.core.colorscheme")
+require("pete.lazy")
+require("pete.lsp")
