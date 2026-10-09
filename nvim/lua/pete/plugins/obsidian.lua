@@ -5,18 +5,26 @@ return {
   ---@type obsidian.config
   opts = {
     legacy_commands = false, -- this will be removed in 4.0.0
+
+    -- Disable obsidian.nvim's UI to avoid conflicts with render-markdown.nvim
+    ui = {
+      enable = false,
+    },
+
     workspaces = {
       {
         name = "main",
         path = "~/Retep",
       },
     },
+
     attachments = {
-        folder = "assets"
+      folder = "assets",
     },
+
     -- Automatically generate name for pasted images
-    img_name_func = function ()
-        return string.format("Pasted image %s", os.date("%Y%m%d%H%M%S"))
+    img_name_func = function()
+      return string.format("Pasted image %s", os.date("%Y%m%d%H%M%S"))
     end,
 
     -- Use the link title as the note ID.
@@ -30,5 +38,5 @@ return {
 
       return tostring(os.time())
     end,
- },
+  },
 }

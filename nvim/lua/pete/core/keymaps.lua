@@ -53,3 +53,8 @@ keymap.set("n","<leader>bn", "<cmd>Obsidian new<CR>",{
 
 keymap.set("n", "<leader>pi", "<cmd>Obsidian paste_img<cr>", 
   { desc = "Paste image from clipboard into Obsidian vault" })
+
+-- MARKDWON PREVIEW
+keymap.set("n", "<leader>m","<cmd>MarkdownPreviewToggle<cr>",
+    {desc = "Toggle Markdown Preview"}
+)

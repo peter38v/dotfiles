@@ -27,3 +27,4 @@ require("lazy").setup({ { import = "pete.plugins" }, { import = "pete.plugins.ls
   },
 })
 
+

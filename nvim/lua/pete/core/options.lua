@@ -48,9 +48,8 @@ vim.opt.foldlevel = 99
 vim.opt.foldlevelstart = 99
 vim.opt.swapfile = false
 vim.opt.scrolloff = 999
-vim.opt.foldmethod = 'indent'
 vim.opt.foldnestmax = 2
 vim.opt.foldminlines = 25
-
+vim.opt.foldmethod = "manual"
 -- Concealment
 vim.opt.conceallevel = 1

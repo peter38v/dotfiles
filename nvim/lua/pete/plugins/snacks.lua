@@ -11,6 +11,11 @@ return {
         float = false,    -- Disable floating window (optional)
         conceal = true,   -- Conceal the image text when rendered inline
       },
+      -- Disable snacks' own LaTeX math renderer so render-markdown.nvim
+      -- (via latex2text / utftex) can handle math instead.
+      math = {
+        enabled = false,
+      },
     },
     -- Explicitly disable all other modules
     bigfile = { enabled = false },
@@ -25,15 +30,10 @@ return {
     scroll = { enabled = false },
     statuscolumn = { enabled = false },
     words = { enabled = false },
-    -- LazyGit is also a separate module that might be loaded
     lazygit = { enabled = false },
-    -- Terminal module (if you want to disable terminal features)
     terminal = { enabled = false },
-    -- Profile module (disabled unless needed)
     profile = { enabled = false },
-    -- Toggle module (for toggling features)
     toggle = { enabled = false },
-    -- Zen mode (likely not needed)
     zen = { enabled = false },
   },
 }

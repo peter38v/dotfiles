@@ -1,5 +1,4 @@
-# A TOML linter such as https://github.com/tombi-toml/tombi can use this schema to validate your config.
-# If you encounter any problems, please make an issue at https://github.com/yazi-rs/schemas.
+# A TOML linter such as https://github.com/tombi-toml/tombi can use this schema to validate your config. If you encounter any problems, please make an issue at https://github.com/yazi-rs/schemas.
 
 #:schema https://yazi-rs.github.io/schemas/keymap.json
 
@@ -373,3 +372,8 @@ keymap = [
 	# Filtering
 	{ on = "f", run = "filter", desc = "Filter help items" },
 ]
+
+[[mgr.prepend_keymap]]
+on   = ["p", "p"]
+run  = 'shell "pngpaste pasted-image.png"'
+desc = "Paste image from clipboard"

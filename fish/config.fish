@@ -4,6 +4,8 @@ end
 
 set -gx EDITOR nvim
 
+set -Ux BROWSER /Applications/Firefox.app/Contents/MacOS/firefox
+
 # Use eza for colored ls output
 function ls
     eza -l --color=always --icons $argv
